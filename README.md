@@ -1,13 +1,13 @@
-# Core Banking System Migration — Data Mapping & Validation Framework
+# Core Banking System Migration - Data Mapping & Validation Framework
 
 ## Business Context
-A regional bank was migrating its core banking system (CBS) from a legacy Oracle-based platform to a modern centralized schema. The primary risk: data integrity loss during migration — mismatched account balances, truncated customer records, or broken transaction histories. This project delivers the migration mapping documentation, transformation scripts, and a post-migration validation framework that ensures zero data loss.
+A regional bank was migrating its core banking system (CBS) from a legacy Oracle-based platform to a modern centralized schema. The primary risk: data integrity loss during migration - mismatched account balances, truncated customer records, or broken transaction histories. This project delivers the migration mapping documentation, transformation scripts, and a post-migration validation framework that ensures zero data loss.
 
 ## Approach
 - Reverse-engineered legacy CBS schema and mapped 12 core tables to the target schema
 - Built Python + PL/SQL transformation scripts to handle data type conversions, null handling, and referential integrity
 - Developed a validation layer performing row-count checks, checksum verification, and business-rule assertions
-- Produced a migration runbook — the kind of artifact a consultant would hand off to the client's IT team
+- Produced a migration runbook - the kind of artifact a consultant would hand off to the client's IT team
 
 ## Business Impact
 - Validation framework detected 3 categories of data anomalies in test migration runs before go-live
